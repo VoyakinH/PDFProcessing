@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  app:
+    image: converter-app
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: converter-app
+    ports: 
+      - "80:80"
